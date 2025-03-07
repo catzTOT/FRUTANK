@@ -11,6 +11,7 @@
 
 ## 自定义减伤
 
+![image](https://github.com/user-attachments/assets/b7422eaf-af16-4359-bf64-c4dede396cbd)
 
 
 ---
