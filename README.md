@@ -16,6 +16,16 @@
 
 
 
+### 举例
+比如要按照p4一运无敌轴
+
+双t设置
+
+![image](https://github.com/user-attachments/assets/71912314-ecde-4475-96cf-de7c308e6757)
+![image](https://github.com/user-attachments/assets/098f0383-35c7-4ee3-bca3-88a6f08a90af)
+
+
+
 ---
 
 ## 支持流程
