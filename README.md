@@ -105,56 +105,44 @@
 3. **地火**
    - 自行规划选择小减 吃平a
    - 第三次地火有什么开什么
-### 提供简单雪仇轴
 
 
-### **MT **
 
-- **P1**
-  - 开场
-  - 光焰 1
 
-- **P2**
-  - DD
-  - 光爆
-  - 绝对零度
+   ![image](https://github.com/user-attachments/assets/e4389957-5d66-428a-96e4-bf7fe537b593)
 
-- **P3**
-  - 时间压缩
-  - 黑色光环
 
-- **P4**
-  - 龙诗
-  - 时间结晶
-  - 二顿悟
+## API
 
-- **P5**
-  - 光尘 1
-  - 挡枪 1
-  - 死亡轮回 2
-  - 光尘 3
+### 总体控制
+- `1`: 全减
+- `2`: 无敌
+- `3`: 不吃
+- `4`: 换T
 
----
+### 详细控制
 
-### **ST **
-
-- **P1**
-  - 光焰 2
-
-- **P2**
-  - 激光分摊
-  - 水波
-
-- **P3**
-  - 脉冲击波 1
-
-- **P4**
-  - 一顿悟
-
-- **P5**
-  - 死亡轮回 1
-  - 光尘 2
-  - 挡枪 2
-  - 死亡轮回 3
-
----
+- **P1 一死刑**:  
+  ```csharp
+  return CatZTankMitigation.Config.P1_Death1 == 1;
+- **P1 二死刑**:
+  ```csharp
+  return CatZTankMitigation.Config.P1_Death2 == 1;
+- **P2 死刑**:
+  ```csharp
+  return CatZTankMitigation.Config.P2_Open == 1;
+- **P3 黑色光环**:
+  ```csharp
+  return CatZTankMitigation.Config.P3_BlackRing == 1;
+- **P3 暗黑舞蹈**:
+  ```csharp
+  return CatZTankMitigation.Config.P3_DarkestDance == 1;
+- **P4 真夜舞蹈**:
+  ```csharp
+  return CatZTankMitigation.Config.P4_DarkestDance == 1;
+- **P5 一死刑**:
+  ```csharp
+  return CatZTankMitigation.Config.P5_Death1 == 1;
+- **P5 二死刑**:
+  ```csharp
+  return CatZTankMitigation.Config.P5_Death2 == 1; 
