@@ -1359,7 +1359,132 @@ local tbl =
 				uuid = "01308474-b06d-372e-9088-6c4a38f0f7dd",
 				version = 2,
 			},
-			inheritedIndex = 12,
+			inheritedIndex = 13,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8d7249e3-1221-3e34-9475-3845b7d47086",
+									true,
+								},
+								
+								{
+									"1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+									true,
+								},
+								
+								{
+									"767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_OblationOT",
+							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+									true,
+								},
+								
+								{
+									"a1f77461-257e-291c-a1f2-78e136c783f1",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumOT",
+							uuid = "946484c8-007b-f8bf-a304-7c4b2ae1c92e",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 61,
+							actionID = 25754,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "isGNB",
+							uuid = "a1f77461-257e-291c-a1f2-78e136c783f1",
+							version = 2,
+						},
+						inheritedIndex = 7,
+					},
+				},
+				mechanicTime = 24.2,
+				name = "[ST]支援减",
+				timeRange = true,
+				timelineIndex = 7,
+				timerOffset = -0.89999997615814,
+				timerStartOffset = -7.5,
+				uuid = "98e791d6-157a-5eed-88ad-ee91f726463d",
+				version = 2,
+			},
+			inheritedIndex = 11,
 		},
 		
 		{
@@ -1464,6 +1589,117 @@ local tbl =
 				timelineIndex = 7,
 				timerStartOffset = -9,
 				uuid = "f3dbeaae-8ab8-eab2-9c9b-65c92f3c2fa1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"43389fd6-c8f9-0a63-a76e-eeea263bdbaf",
+									true,
+								},
+								
+								{
+									"fad187dd-f82c-f006-9b72-a36bde3b841d",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Hotbar_Grit",
+							uuid = "6923e2f0-7bde-b7ff-a22f-e6e969a9e5fe",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditions = 
+							{
+								
+								{
+									"43389fd6-c8f9-0a63-a76e-eeea263bdbaf",
+									true,
+								},
+								
+								{
+									"2ef732e6-20ca-4318-b090-b86e19c400df",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "43b420df-3625-d15f-b190-2df7b8899cb2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "43389fd6-c8f9-0a63-a76e-eeea263bdbaf",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							buffIDList = 
+							{
+								743,
+							},
+							category = "Self",
+							matchAnyBuff = true,
+							name = "DRK",
+							uuid = "fad187dd-f82c-f006-9b72-a36bde3b841d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							buffIDList = 
+							{
+								743,
+							},
+							category = "Self",
+							matchAnyBuff = true,
+							name = "GNB",
+							uuid = "2ef732e6-20ca-4318-b090-b86e19c400df",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 24.2,
+				name = "[ST]开盾",
+				timeRange = true,
+				timelineIndex = 7,
+				timerStartOffset = -10,
+				uuid = "90d873d8-eec8-e18e-8968-e7577a1c218e",
 				version = 2,
 			},
 		},
@@ -1873,6 +2109,109 @@ local tbl =
 							{
 								
 								{
+									"7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+									true,
+								},
+								
+								{
+									"17cbdbc6-bc84-3633-bd2f-7298a5dfd5a1",
+									true,
+								},
+								
+								{
+									"425c5c2d-e8a9-1927-a982-d2b194f7a9dc",
+									true,
+								},
+								
+								{
+									"42df6567-88d1-5aed-acae-725496027278",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMind",
+							uuid = "f3b6ce74-d49a-fc5b-9f84-a024acca9780",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 3634,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P1_Death1 == 3\n",
+							name = "p1-1-3",
+							uuid = "17cbdbc6-bc84-3633-bd2f-7298a5dfd5a1",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "425c5c2d-e8a9-1927-a982-d2b194f7a9dc",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "42df6567-88d1-5aed-acae-725496027278",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 40.3,
+				name = "[DRK]弃明",
+				timeRange = true,
+				timelineIndex = 11,
+				timerStartOffset = -9.5,
+				uuid = "6cc561bf-c81d-9758-a01f-4f3eeca4f189",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"834b8dfe-df7d-d6a1-9a26-88d347df9fe2",
 									true,
 								},
@@ -1926,6 +2265,7 @@ local tbl =
 				uuid = "465a0acd-268c-f2d1-aecf-f1d755566901",
 				version = 2,
 			},
+			inheritedIndex = 7,
 		},
 		
 		{
@@ -2030,164 +2370,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 11,
-		},
-	},
-	[22] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 85.9,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 22,
-				timerStartOffset = -14.5,
-				uuid = "782a7aab-1e37-68d4-8d54-6404755845e3",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3554d064-c5e2-f672-9b39-f645ffbf9570",
-									true,
-								},
-								
-								{
-									"534024a9-a0a9-26ec-a4c8-dc2cda0991d4",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "8e8eb44a-8cf1-73d3-80b3-c274d34ee005",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7388,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3554d064-c5e2-f672-9b39-f645ffbf9570",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "534024a9-a0a9-26ec-a4c8-dc2cda0991d4",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 85.9,
-				name = "[WAR]团减",
-				timeRange = true,
-				timelineIndex = 22,
-				timerStartOffset = -7,
-				uuid = "eacf6403-9a2e-6794-ab04-c28e8bded6bb",
-				version = 2,
-			},
 		},
 	},
 	[30] = 
@@ -2716,11 +2898,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -2748,11 +2925,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
 								
 								{
 									"01a0bac5-c60f-53be-9bd9-7b2054230b5e",
@@ -2784,11 +2956,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -2812,18 +2979,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
 					
 					{
 						data = 
@@ -3450,6 +3605,7 @@ local tbl =
 				uuid = "59a2d8f7-9f34-1888-ac47-2bbad7946d99",
 				version = 2,
 			},
+			inheritedIndex = 8,
 		},
 		
 		{
@@ -4319,11 +4475,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -4351,11 +4502,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
 								
 								{
 									"01a0bac5-c60f-53be-9bd9-7b2054230b5e",
@@ -4387,11 +4533,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -4415,18 +4556,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
 					
 					{
 						data = 
@@ -4648,7 +4777,7 @@ local tbl =
 								},
 								
 								{
-									"767f3ac3-0814-6329-8422-a93bc993116d",
+									"e2b5c4e5-1d7d-b641-96d9-d4df9de577d6",
 									true,
 								},
 							},
@@ -4703,12 +4832,11 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P1_Death1 == 1",
-							name = "p1-1全减",
-							uuid = "767f3ac3-0814-6329-8422-a93bc993116d",
+							conditionLua = "return CatZTankMitigation.Config.P2_Open == 1 or 4\n",
+							name = "p2-1or4",
+							uuid = "e2b5c4e5-1d7d-b641-96d9-d4df9de577d6",
 							version = 2,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 219,
@@ -4750,7 +4878,7 @@ local tbl =
 								},
 								
 								{
-									"a6144afa-89ec-3140-86f3-4f59b3439e68",
+									"02efec77-85f1-6511-a76f-5330de3b4371",
 									true,
 								},
 							},
@@ -4806,12 +4934,11 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P1_Death1 == 1",
-							name = "p1-1全减",
-							uuid = "a6144afa-89ec-3140-86f3-4f59b3439e68",
+							conditionLua = "return CatZTankMitigation.Config.P2_Open == 1 or 4\n",
+							name = "p2-1or4",
+							uuid = "02efec77-85f1-6511-a76f-5330de3b4371",
 							version = 2,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 219,
@@ -4823,168 +4950,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 10,
-		},
-	},
-	[50] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3554d064-c5e2-f672-9b39-f645ffbf9570",
-									true,
-								},
-								
-								{
-									"482d4501-ba02-5b72-a0af-75886d46d004",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "8e8eb44a-8cf1-73d3-80b3-c274d34ee005",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7388,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3554d064-c5e2-f672-9b39-f645ffbf9570",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "482d4501-ba02-5b72-a0af-75886d46d004",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 251.1,
-				name = "[WAR]团减",
-				timeRange = true,
-				timelineIndex = 50,
-				timerEndOffset = 5,
-				timerStartOffset = 0.5,
-				uuid = "eebd7dc4-b81f-7e34-9ea4-272b320cf14d",
-				version = 2,
-			},
-		},
-	},
-	[57] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 259.9,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 57,
-				timerStartOffset = -14.5,
-				uuid = "2c131544-af18-57e9-bf5c-b6f1c688855b",
-				version = 2,
-			},
-			inheritedIndex = 1,
 		},
 	},
 	[62] = 
@@ -5906,6 +5871,131 @@ local tbl =
 			},
 			inheritedIndex = 3,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8d7249e3-1221-3e34-9475-3845b7d47086",
+									true,
+								},
+								
+								{
+									"1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+									true,
+								},
+								
+								{
+									"767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_OblationOT",
+							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+									true,
+								},
+								
+								{
+									"a1f77461-257e-291c-a1f2-78e136c783f1",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumOT",
+							uuid = "946484c8-007b-f8bf-a304-7c4b2ae1c92e",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 61,
+							actionID = 25754,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "1ffe845e-7d9a-c8bd-9a2a-81788cc9f05d",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "isGNB",
+							uuid = "a1f77461-257e-291c-a1f2-78e136c783f1",
+							version = 2,
+						},
+						inheritedIndex = 7,
+					},
+				},
+				mechanicTime = 307.2,
+				name = "[ST]支援减",
+				timeRange = true,
+				timelineIndex = 72,
+				timerOffset = -0.89999997615814,
+				timerStartOffset = -7.5,
+				uuid = "082d16cb-8bfd-e6cb-ba36-60839d823bd9",
+				version = 2,
+			},
+			inheritedIndex = 11,
+		},
 	},
 	[76] = 
 	{
@@ -6437,162 +6527,6 @@ local tbl =
 	},
 	[81] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3554d064-c5e2-f672-9b39-f645ffbf9570",
-									true,
-								},
-								
-								{
-									"47da6bf4-2d85-4359-bcce-fc0a626f749e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "8e8eb44a-8cf1-73d3-80b3-c274d34ee005",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7388,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3554d064-c5e2-f672-9b39-f645ffbf9570",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "47da6bf4-2d85-4359-bcce-fc0a626f749e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 335.9,
-				name = "[WAR]团减",
-				timeRange = true,
-				timelineIndex = 81,
-				timerEndOffset = 10,
-				timerStartOffset = 0.5,
-				uuid = "d8334981-3a2f-a16d-8b7f-8cf1985fa892",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 335.9,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 81,
-				timerEndOffset = 5,
-				uuid = "3e033833-bad3-4372-b271-339bac9b1e4d",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
 		
 		{
 			data = 
@@ -7177,164 +7111,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
-		},
-	},
-	[126] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 544.2,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 126,
-				timerStartOffset = -14.5,
-				uuid = "2619efb9-017f-1658-a3cd-6fb4c8e6fab1",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3554d064-c5e2-f672-9b39-f645ffbf9570",
-									true,
-								},
-								
-								{
-									"47da6bf4-2d85-4359-bcce-fc0a626f749e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "8e8eb44a-8cf1-73d3-80b3-c274d34ee005",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7388,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3554d064-c5e2-f672-9b39-f645ffbf9570",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "47da6bf4-2d85-4359-bcce-fc0a626f749e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 544.2,
-				name = "[WAR]团减",
-				timeRange = true,
-				timelineIndex = 126,
-				timerStartOffset = -14.5,
-				uuid = "a31e505d-8cb2-191c-87ce-5f51d4185ca0",
-				version = 2,
-			},
 		},
 	},
 	[140] = 
@@ -8679,94 +8455,6 @@ local tbl =
 			inheritedIndex = 16,
 		},
 	},
-	[146] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 624.7,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 146,
-				timerStartOffset = -14.5,
-				uuid = "576fce2d-a827-163d-9142-67ab0bafd760",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-	},
 	[150] = 
 	{
 		
@@ -8808,11 +8496,6 @@ local tbl =
 								},
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -8838,11 +8521,6 @@ local tbl =
 								
 								{
 									"daa2114b-4f3d-c6b0-83c5-ca1d72f5c88d",
-									true,
-								},
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
 									true,
 								},
 								
@@ -8876,11 +8554,6 @@ local tbl =
 								},
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -8910,18 +8583,6 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -10830,91 +10491,6 @@ local tbl =
 							{
 								
 								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 783.4,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 176,
-				timerStartOffset = -14.5,
-				uuid = "ad68dc80-bc64-fa12-9ba0-de54218bd143",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"6e88e95b-bc82-7a7e-9bcb-b7fabc5cea19",
 									true,
 								},
@@ -11662,91 +11238,6 @@ local tbl =
 							{
 								
 								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 864.8,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 204,
-				timerStartOffset = -14.5,
-				uuid = "1b1fd53e-4085-36b8-b8c3-70b3670d6e31",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"6e88e95b-bc82-7a7e-9bcb-b7fabc5cea19",
 									true,
 								},
@@ -12172,9 +11663,91 @@ local tbl =
 							{
 								
 								{
-									"8d7249e3-1221-3e34-9475-3845b7d47086",
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
 									true,
 								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"051e7732-0c27-8be5-b546-f255d621a200",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 7393,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 984.8,
+				name = "[DRK]黑盾",
+				timeRange = true,
+				timelineIndex = 209,
+				timerEndOffset = 3,
+				timerStartOffset = -1,
+				uuid = "b7e51125-9d54-dffb-ae61-700c8817fed7",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
 								
 								{
 									"767a9330-2eea-bd3a-83ce-a8c50a4a3547",
@@ -12196,19 +11769,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 61,
-							actionID = 25754,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "DARKKNIGHT",
@@ -12224,7 +11784,7 @@ local tbl =
 				timelineIndex = 209,
 				timerEndOffset = 5,
 				timerOffset = -0.89999997615814,
-				timerStartOffset = 0.5,
+				timerStartOffset = 1,
 				uuid = "4a88266d-0263-4219-b700-399d4beccaad",
 				version = 2,
 			},
@@ -12280,7 +11840,7 @@ local tbl =
 				uuid = "aeda956d-b1e6-bf2d-b157-ddb4c1ad0a33",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -12351,94 +11911,6 @@ local tbl =
 				uuid = "b897f3f4-7e93-7d6a-a4fd-0f0e19fe9da4",
 				version = 2,
 			},
-		},
-	},
-	[215] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16471,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 16160,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
-							version = 2,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 1011.4,
-				name = "[TANK]团减",
-				timeRange = true,
-				timelineIndex = 215,
-				timerStartOffset = -14.5,
-				uuid = "e433b46c-2c5d-b9cf-abae-acc1fc96305d",
-				version = 2,
-			},
-			inheritedIndex = 1,
 		},
 	},
 	[218] = 
@@ -12554,7 +12026,7 @@ local tbl =
 				name = "[ST-TANK]挑衅",
 				timeRange = true,
 				timelineIndex = 218,
-				timerStartOffset = -3.5,
+				timerStartOffset = -4,
 				uuid = "bd15ccb7-60e7-c9ec-9fcf-469568b9240c",
 				version = 2,
 			},
@@ -12733,6 +12205,110 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
+									true,
+								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"051e7732-0c27-8be5-b546-f255d621a200",
+									true,
+								},
+								
+								{
+									"9793a2e2-8d9e-e033-9859-d26b4049f9af",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 7393,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death1 == 1",
+							name = "p5-1全减",
+							uuid = "9793a2e2-8d9e-e033-9859-d26b4049f9af",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 1029.6,
+				name = "[DRK]黑盾",
+				timeRange = true,
+				timelineIndex = 218,
+				timerEndOffset = 3,
+				timerStartOffset = -0.5,
+				uuid = "5e9276a6-7898-1617-b382-95f8ce4c3a01",
+				version = 2,
+			},
+			inheritedIndex = 11,
+		},
 	},
 	[222] = 
 	{
@@ -12769,11 +12345,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -12801,11 +12372,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
 								
 								{
 									"01a0bac5-c60f-53be-9bd9-7b2054230b5e",
@@ -12837,11 +12403,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -12865,18 +12426,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
 					
 					{
 						data = 
@@ -13007,11 +12556,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"edb2ba10-d413-7512-8e8c-8632d916f5e6",
 									true,
 								},
@@ -13041,11 +12585,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"edb2ba10-d413-7512-8e8c-8632d916f5e6",
 									true,
 								},
@@ -13070,11 +12609,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"b7da10b6-7971-40ff-9bf4-6327c0abdef4",
 									true,
 								},
@@ -13093,6 +12627,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death1 == 1",
+							name = "p5-1全减",
+							uuid = "edb2ba10-d413-7512-8e8c-8632d916f5e6",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
 					
 					{
 						data = 
@@ -13142,31 +12688,7 @@ local tbl =
 							uuid = "b7da10b6-7971-40ff-9bf4-6327c0abdef4",
 							version = 2,
 						},
-						inheritedIndex = 7,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "65ceea80-a7df-9761-9ee3-bee2207052f2",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P5_Death1 == 1",
-							name = "p5-1全减",
-							uuid = "edb2ba10-d413-7512-8e8c-8632d916f5e6",
-							version = 2,
-						},
-						inheritedIndex = 1,
+						inheritedIndex = 4,
 					},
 				},
 				mechanicTime = 1033.6,
@@ -13468,6 +12990,93 @@ local tbl =
 							{
 								
 								{
+									"27e2182d-961d-a1c7-90ab-181786a493f6",
+									true,
+								},
+								
+								{
+									"3e066724-1277-99df-a9b9-527b3479c0c8",
+									true,
+								},
+								
+								{
+									"e590fe6f-ead2-92eb-9ce8-4b47d36fbf8c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumSelf",
+							uuid = "e11f1939-26f2-df53-bf60-cdd84ddd0e68",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25758,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "27e2182d-961d-a1c7-90ab-181786a493f6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "isGNB",
+							uuid = "3e066724-1277-99df-a9b9-527b3479c0c8",
+							version = 2,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death1 == 1",
+							name = "p5-1全减",
+							uuid = "e590fe6f-ead2-92eb-9ce8-4b47d36fbf8c",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 1033.6,
+				name = "[GNB]刚玉",
+				timeRange = true,
+				timelineIndex = 222,
+				timerStartOffset = -7,
+				uuid = "5b6c6d74-dc63-4846-93d4-5effe11d356d",
+				version = 2,
+			},
+			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"89182326-9992-2573-ac54-c6f182e00942",
 									true,
 								},
@@ -13498,7 +13107,7 @@ local tbl =
 				name = "[GNB]极光",
 				timeRange = true,
 				timelineIndex = 222,
-				timerStartOffset = -9,
+				timerStartOffset = -5,
 				uuid = "90741677-5e08-5505-aaa2-571f14688728",
 				version = 2,
 			},
@@ -13675,109 +13284,6 @@ local tbl =
 				uuid = "d5c5f1f2-c63b-27ff-a088-893cab44ccf3",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e82f7069-3848-abe5-87e0-2157a8db3e98",
-									true,
-								},
-								
-								{
-									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
-									true,
-								},
-								
-								{
-									"051e7732-0c27-8be5-b546-f255d621a200",
-									true,
-								},
-								
-								{
-									"9793a2e2-8d9e-e033-9859-d26b4049f9af",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
-							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 3,
-							mpType = 2,
-							mpValue = 3000,
-							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7393,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P5_Death1 == 1",
-							name = "p5-1全减",
-							uuid = "9793a2e2-8d9e-e033-9859-d26b4049f9af",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				mechanicTime = 1033.6,
-				name = "[DRK]黑盾",
-				timeRange = true,
-				timelineIndex = 222,
-				timerStartOffset = -4,
-				uuid = "71101fb9-f889-cca6-9482-5a0d3cec25f4",
-				version = 2,
-			},
-			inheritedIndex = 11,
 		},
 		
 		{
@@ -13966,7 +13472,7 @@ local tbl =
 				uuid = "f96b8600-2d9b-243c-b0a1-ad1d1c0b7dbf",
 				version = 2,
 			},
-			inheritedIndex = 14,
+			inheritedIndex = 15,
 		},
 	},
 	[226] = 
@@ -14026,78 +13532,6 @@ local tbl =
 	},
 	[237] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"8d7249e3-1221-3e34-9475-3845b7d47086",
-									true,
-								},
-								
-								{
-									"767a9330-2eea-bd3a-83ce-a8c50a4a3547",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuDRK3_Tankbar_Oblation",
-							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
-							variableIsHover = true,
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 61,
-							actionID = 25754,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "767a9330-2eea-bd3a-83ce-a8c50a4a3547",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 1097.4,
-				name = "[DRK]献奉",
-				timeRange = true,
-				timelineIndex = 237,
-				timerEndOffset = 5,
-				timerOffset = -0.89999997615814,
-				timerStartOffset = 0.5,
-				uuid = "d2145854-95c1-7241-a461-e46b22cde09c",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -14221,8 +13655,149 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
+									true,
+								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"051e7732-0c27-8be5-b546-f255d621a200",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 7393,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 1097.4,
+				name = "[DRK]黑盾",
+				timeRange = true,
+				timelineIndex = 237,
+				timerEndOffset = 3,
+				timerStartOffset = -1,
+				uuid = "51f633f2-e903-bee3-8d43-844df3bc764f",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_Oblation",
+							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "767a9330-2eea-bd3a-83ce-a8c50a4a3547",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 1097.4,
+				name = "[DRK]献奉",
+				timeRange = true,
+				timelineIndex = 237,
+				timerEndOffset = 5,
+				timerOffset = -0.89999997615814,
+				timerStartOffset = 1,
+				uuid = "38a2ebf5-e2f5-0828-9713-cd8cf5ddeb74",
+				version = 2,
+			},
+		},
 	},
-	[243] = 
+	[247] = 
 	{
 		
 		{
@@ -14239,13 +13814,18 @@ local tbl =
 							{
 								
 								{
-									"93fa2e50-76d5-d417-b89f-5d8c03d60916",
+									"94c9b8df-f9ce-2f3c-a267-e6e0874dc8d6",
+									true,
+								},
+								
+								{
+									"5eec7261-2ed2-eb25-839a-b4e697e1227c",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
-							uuid = "50ac7184-7343-d596-b1bf-0f54a7d4e14f",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "c2072365-70ad-fc43-a9ce-8620da7ca0b4",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -14258,12 +13838,118 @@ local tbl =
 							{
 								
 								{
-									"3b3fc644-c6a8-c02f-91c8-114ef386844e",
+									"94c9b8df-f9ce-2f3c-a267-e6e0874dc8d6",
+									true,
+								},
+								
+								{
+									"5eec7261-2ed2-eb25-839a-b4e697e1227c",
 									true,
 								},
 							},
-							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
-							uuid = "45c7e930-b207-b6b6-9a88-214685361d3e",
+							gVar = "ACR_RikuDRK3_Hotbar_Provoke",
+							uuid = "e27fda42-50b8-7b93-99d5-76b2b824b2d2",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"94c9b8df-f9ce-2f3c-a267-e6e0874dc8d6",
+									true,
+								},
+								
+								{
+									"5eec7261-2ed2-eb25-839a-b4e697e1227c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Hotbar_Provoke",
+							uuid = "ab610a23-644d-5083-bf54-c022156f8d73",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.10000000149012,
+							actionID = 7533,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "94c9b8df-f9ce-2f3c-a267-e6e0874dc8d6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "5eec7261-2ed2-eb25-839a-b4e697e1227c",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 1146.3,
+				name = "[ST-TANK]挑衅",
+				timeRange = true,
+				timelineIndex = 247,
+				timerStartOffset = -4,
+				uuid = "929f6563-5431-65b2-be43-5402e213c355",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
+									true,
+								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"051e7732-0c27-8be5-b546-f255d621a200",
+									true,
+								},
+								
+								{
+									"65990768-14d7-a870-927e-13fa9957fb7c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -14275,12 +13961,11 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 0.5,
-							actionID = 16471,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "93fa2e50-76d5-d417-b89f-5d8c03d60916",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
 							version = 2,
 						},
 					},
@@ -14289,24 +13974,49 @@ local tbl =
 						data = 
 						{
 							actionCDValue = 0.5,
-							actionID = 16160,
+							actionID = 7393,
 							category = "Self",
 							comparator = 2,
 							conditionType = 4,
-							uuid = "3b3fc644-c6a8-c02f-91c8-114ef386844e",
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "isDRK",
+							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death2 == 1",
+							name = "p5-2全减",
+							uuid = "65990768-14d7-a870-927e-13fa9957fb7c",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
 				},
-				mechanicTime = 1124,
-				name = "[TANK]团减",
+				mechanicTime = 1146.3,
+				name = "[DRK]黑盾",
 				timeRange = true,
-				timelineIndex = 243,
-				timerStartOffset = -14.5,
-				uuid = "87d7f7e1-8a2a-5453-a94f-9f169ee9e8e4",
+				timelineIndex = 247,
+				timerEndOffset = 3,
+				timerStartOffset = -0.5,
+				uuid = "0773aca9-f6a6-688e-a658-95e87208d2eb",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 11,
 		},
 	},
 	[251] = 
@@ -14344,11 +14054,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -14376,11 +14081,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
 								
 								{
 									"01a0bac5-c60f-53be-9bd9-7b2054230b5e",
@@ -14412,11 +14112,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -14440,18 +14135,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
 					
 					{
 						data = 
@@ -14582,11 +14265,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"edb2ba10-d413-7512-8e8c-8632d916f5e6",
 									true,
 								},
@@ -14616,11 +14294,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"edb2ba10-d413-7512-8e8c-8632d916f5e6",
 									true,
 								},
@@ -14645,11 +14318,6 @@ local tbl =
 								},
 								
 								{
-									"65ceea80-a7df-9761-9ee3-bee2207052f2",
-									true,
-								},
-								
-								{
 									"b7da10b6-7971-40ff-9bf4-6327c0abdef4",
 									true,
 								},
@@ -14668,6 +14336,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death2 == 1",
+							name = "p5-2全减",
+							uuid = "edb2ba10-d413-7512-8e8c-8632d916f5e6",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
 					
 					{
 						data = 
@@ -14718,30 +14398,6 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 7,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "65ceea80-a7df-9761-9ee3-bee2207052f2",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P5_Death2 == 1",
-							name = "p5-2全减",
-							uuid = "edb2ba10-d413-7512-8e8c-8632d916f5e6",
-							version = 2,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1150.3,
@@ -15073,10 +14729,97 @@ local tbl =
 				name = "[GNB]极光",
 				timeRange = true,
 				timelineIndex = 251,
-				timerStartOffset = -9,
+				timerStartOffset = -5,
 				uuid = "86c832f1-b527-2825-a3d0-74fb8f5b0494",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"27e2182d-961d-a1c7-90ab-181786a493f6",
+									true,
+								},
+								
+								{
+									"3e066724-1277-99df-a9b9-527b3479c0c8",
+									true,
+								},
+								
+								{
+									"930f7657-ad74-104f-950c-bccd57a8bd4c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumSelf",
+							uuid = "e11f1939-26f2-df53-bf60-cdd84ddd0e68",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25758,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "27e2182d-961d-a1c7-90ab-181786a493f6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "isGNB",
+							uuid = "3e066724-1277-99df-a9b9-527b3479c0c8",
+							version = 2,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P5_Death2 == 1",
+							name = "p5-2全减",
+							uuid = "930f7657-ad74-104f-950c-bccd57a8bd4c",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 1150.3,
+				name = "[GNB]刚玉",
+				timeRange = true,
+				timelineIndex = 251,
+				timerStartOffset = -7,
+				uuid = "23f6d9ce-2bcb-5357-b58f-3fa4a1826fab",
+				version = 2,
+			},
+			inheritedIndex = 9,
 		},
 		
 		{
@@ -15250,109 +14993,6 @@ local tbl =
 				uuid = "5a1f6418-8dbe-9f0b-958b-db77e1110647",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e82f7069-3848-abe5-87e0-2157a8db3e98",
-									true,
-								},
-								
-								{
-									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
-									true,
-								},
-								
-								{
-									"051e7732-0c27-8be5-b546-f255d621a200",
-									true,
-								},
-								
-								{
-									"65990768-14d7-a870-927e-13fa9957fb7c",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
-							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 3,
-							mpType = 2,
-							mpValue = 3000,
-							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7393,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "051e7732-0c27-8be5-b546-f255d621a200",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P5_Death2 == 1",
-							name = "p5-2全减",
-							uuid = "65990768-14d7-a870-927e-13fa9957fb7c",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				mechanicTime = 1150.3,
-				name = "[DRK]黑盾",
-				timeRange = true,
-				timelineIndex = 251,
-				timerStartOffset = -4,
-				uuid = "e75c5e3a-db98-67ed-a74a-bdb87ee9d395",
-				version = 2,
-			},
-			inheritedIndex = 11,
 		},
 		
 		{
@@ -15671,11 +15311,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"fb259214-2f6a-17a1-8db7-d5f2a990ba71",
 									true,
 								},
@@ -15698,11 +15333,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
 								
 								{
 									"01a0bac5-c60f-53be-9bd9-7b2054230b5e",
@@ -15729,11 +15359,6 @@ local tbl =
 							{
 								
 								{
-									"e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-									true,
-								},
-								
-								{
 									"9a771037-2d2a-6f83-8f41-f9a48a9e9483",
 									true,
 								},
@@ -15752,18 +15377,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "e1c894d5-ae02-8e65-a803-40645ff2cfc4",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
 					
 					{
 						data = 

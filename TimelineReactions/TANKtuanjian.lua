@@ -64,6 +64,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -91,6 +96,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -131,6 +141,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -138,18 +160,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -252,6 +262,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -279,6 +294,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -319,6 +339,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -326,18 +358,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -370,11 +390,82 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 21,
 				timerEndOffset = 5,
-				timerStartOffset = 0.10000000149012,
-				uuid = "7d943762-6f34-d000-95c7-98bdfaae2540",
+				timerStartOffset = 0.5,
+				uuid = "a3d3437b-ea02-a5fa-810d-2ad82c7c8221",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+	},
+	[22] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 85.9,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 22,
+				timerStartOffset = -14,
+				uuid = "651a43f2-5bfe-1ce2-8596-8dbee23d39d3",
+				version = 2,
+			},
 		},
 	},
 	[29] = 
@@ -441,6 +532,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -468,6 +564,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -629,6 +730,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -656,6 +762,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -696,6 +807,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -703,18 +826,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -747,10 +858,78 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 44,
 				timerStartOffset = -14,
-				uuid = "ee0d23ac-6e5a-f367-b250-64dd8c8aed81",
+				uuid = "2ecbb27c-ce81-5e87-a1e2-53a780559f2f",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 235.3,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 44,
+				timerStartOffset = -14,
+				uuid = "3b48cdec-b3ef-4d09-b966-16a92d1f26e3",
+				version = 2,
+			},
 		},
 	},
 	[65] = 
@@ -794,6 +973,7 @@ local tbl =
 							variableTogglesType = 3,
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -815,6 +995,11 @@ local tbl =
 								
 								{
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -846,6 +1031,11 @@ local tbl =
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
 							uuid = "38ea52cc-5ba1-66cb-b09d-f6d1d9ea5689",
@@ -875,20 +1065,8 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 6,
-							inRangeValue = 5,
+							inRangeValue = 3,
 							uuid = "c98bbd2c-69fb-606f-8e61-1e45943871ca",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
 					},
@@ -902,7 +1080,19 @@ local tbl =
 							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 							version = 2,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
+							version = 2,
+						},
 					},
 					
 					{
@@ -934,7 +1124,7 @@ local tbl =
 				name = "[ST-TANK]雪仇",
 				timeRange = true,
 				timelineIndex = 65,
-				timerStartOffset = -10,
+				timerStartOffset = -5,
 				uuid = "7613bbf9-6e94-0bc5-8b6d-fe9fd5e48c44",
 				version = 2,
 			},
@@ -1005,6 +1195,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -1032,6 +1227,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -1072,6 +1272,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -1079,18 +1291,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -1123,13 +1323,81 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 80,
 				timerStartOffset = -14,
-				uuid = "17bd5e85-5fa9-9130-9ce6-a64a0bdfad5f",
+				uuid = "f7c81d56-039b-0b87-85c8-77e25b1eed51",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 331.8,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 80,
+				timerStartOffset = -14,
+				uuid = "82e315e0-8e54-4047-b607-dae57f413792",
+				version = 2,
+			},
 		},
 	},
-	[95] = 
+	[100] = 
 	{
 		
 		{
@@ -1193,6 +1461,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -1220,6 +1493,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -1306,200 +1584,12 @@ local tbl =
 						inheritedIndex = 7,
 					},
 				},
-				mechanicTime = 368.8,
-				name = "[ST-TANK]雪仇",
-				timeRange = true,
-				timelineIndex = 95,
-				timerStartOffset = -4,
-				uuid = "921bfde8-6032-e020-a183-6723e7c9799d",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-	},
-	[100] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"f814f9e5-13f0-6672-9386-5b3543e8d62b",
-									true,
-								},
-								
-								{
-									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "122aa5cf-03fc-1410-812a-58ddea2429f9",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"e461a896-bd5e-ab07-a484-aec12d0712fe",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
-							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
-							uuid = "38ea52cc-5ba1-66cb-b09d-f6d1d9ea5689",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 7535,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "911c0c8e-5374-a901-aa54-8ef953412e84",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "c98bbd2c-69fb-606f-8e61-1e45943871ca",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "e461a896-bd5e-ab07-a484-aec12d0712fe",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "GUNBREAKER",
-							name = "isGNB",
-							uuid = "5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-							version = 2,
-						},
-						inheritedIndex = 7,
-					},
-				},
 				mechanicTime = 388.7,
-				name = "[MT-TANK]雪仇",
+				name = "[ST-TANK]雪仇",
 				timeRange = true,
 				timelineIndex = 100,
 				timerStartOffset = -14,
-				uuid = "baf55cce-a204-531f-afce-bc18ecc83d02",
+				uuid = "4b3b6a9e-7888-ad45-ae06-b4ed9089dd29",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -1569,6 +1659,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -1596,6 +1691,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -1636,6 +1736,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -1643,18 +1755,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -1687,10 +1787,10 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 123,
 				timerStartOffset = -14,
-				uuid = "d8496674-ead7-03c1-a37f-84888518b4f3",
+				uuid = "40d86842-bf99-5673-9338-a556e3a9fb72",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
 		},
 	},
 	[139] = 
@@ -1757,6 +1857,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -1784,6 +1889,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -1824,6 +1934,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -1831,18 +1953,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -1875,14 +1985,11 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 139,
 				timerStartOffset = -14.5,
-				uuid = "5b9e8e7f-c9fd-6051-8d36-8b55366be3df",
+				uuid = "8714525e-1c0c-6de5-babe-0e9dc4698899",
 				version = 2,
 			},
 			inheritedIndex = 3,
 		},
-	},
-	[140] = 
-	{
 		
 		{
 			data = 
@@ -1898,27 +2005,12 @@ local tbl =
 							{
 								
 								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"f814f9e5-13f0-6672-9386-5b3543e8d62b",
-									true,
-								},
-								
-								{
-									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "122aa5cf-03fc-1410-812a-58ddea2429f9",
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -1932,51 +2024,12 @@ local tbl =
 							{
 								
 								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"e461a896-bd5e-ab07-a484-aec12d0712fe",
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
-							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
-							uuid = "38ea52cc-5ba1-66cb-b09d-f6d1d9ea5689",
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -1988,85 +2041,22 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 0.5,
-							actionID = 7535,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "911c0c8e-5374-a901-aa54-8ef953412e84",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "c98bbd2c-69fb-606f-8e61-1e45943871ca",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
 							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
 							version = 2,
 						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "e461a896-bd5e-ab07-a484-aec12d0712fe",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "GUNBREAKER",
-							name = "isGNB",
-							uuid = "5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-							version = 2,
-						},
-						inheritedIndex = 7,
 					},
 				},
-				mechanicTime = 595.4,
-				name = "[MT-TANK]雪仇",
+				mechanicTime = 587.1,
+				name = "[ST]群减",
 				timeRange = true,
-				timelineIndex = 140,
+				timelineIndex = 139,
 				timerStartOffset = -14,
-				uuid = "223a4bc4-1728-27c1-b1d2-fb699e14e933",
+				uuid = "23e55942-8e66-beab-a687-9ceaad934866",
 				version = 2,
 			},
-			inheritedIndex = 3,
 		},
 	},
 	[154] = 
@@ -2133,6 +2123,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -2160,6 +2155,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2200,6 +2200,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -2207,18 +2219,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -2251,10 +2251,78 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 154,
 				timerStartOffset = -14.5,
-				uuid = "6d53bb8d-cf71-6769-86e2-ac6ab498f3f9",
+				uuid = "69a033f0-9280-de3f-99b0-9baae1ad65d7",
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 670.1,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 154,
+				timerStartOffset = -14,
+				uuid = "83b33580-9723-bc97-bd9f-87bc055ec56f",
+				version = 2,
+			},
 		},
 	},
 	[166] = 
@@ -2321,6 +2389,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -2348,6 +2421,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2509,6 +2587,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -2536,6 +2619,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2576,6 +2664,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -2583,18 +2683,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -2627,7 +2715,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 176,
 				timerStartOffset = -14.5,
-				uuid = "cef7c036-b564-e663-9d4e-37cddb2c46bb",
+				uuid = "a11aed43-fb98-df4c-af42-e3d74a893b0c",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -2674,6 +2762,7 @@ local tbl =
 							variableTogglesType = 3,
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -2695,6 +2784,11 @@ local tbl =
 								
 								{
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2724,6 +2818,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2821,6 +2920,77 @@ local tbl =
 			inheritedIndex = 3,
 		},
 	},
+	[181] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 804.9,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 181,
+				timerStartOffset = -14,
+				uuid = "15e07085-869c-92e3-b55a-8520f3eb9be7",
+				version = 2,
+			},
+		},
+	},
 	[204] = 
 	{
 		
@@ -2885,6 +3055,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -2912,6 +3087,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -2952,6 +3132,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -2959,18 +3151,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -2999,11 +3179,11 @@ local tbl =
 					},
 				},
 				mechanicTime = 864.8,
-				name = "[MT-TANK]雪仇",
+				name = "[ST-TANK]雪仇",
 				timeRange = true,
 				timelineIndex = 204,
-				timerStartOffset = -14,
-				uuid = "25c8f893-5482-94ae-9d7b-8920ae6bebd0",
+				timerStartOffset = -14.5,
+				uuid = "fb544efd-77d8-73e3-92fe-4412ed43d7c5",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -3073,6 +3253,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -3100,6 +3285,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -3140,6 +3330,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -3147,18 +3349,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -3191,10 +3381,10 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 209,
 				timerStartOffset = -5,
-				uuid = "0e6ea00f-32d0-e8f8-aefa-5636a283aa16",
+				uuid = "ecae6107-9056-e9f2-a8b7-aa38f3dcece9",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
 		},
 	},
 	[215] = 
@@ -3261,6 +3451,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -3288,6 +3483,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -3328,6 +3528,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -3335,18 +3547,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -3379,7 +3579,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 215,
 				timerStartOffset = -14.5,
-				uuid = "1723e0b3-65b1-a9b8-80f9-9d53d03260a2",
+				uuid = "2b9a008b-1a3f-5e76-87c4-306327c6f7e3",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -3449,6 +3649,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -3476,6 +3681,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -3516,6 +3726,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -3523,18 +3745,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -3567,10 +3777,78 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 233,
 				timerStartOffset = -14,
-				uuid = "28f450a6-7672-930d-87a7-3f3299ace27c",
+				uuid = "7a764600-b018-2768-bdb6-eb1a96f34698",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 1065.6,
+				name = "[ST]群减",
+				timeRange = true,
+				timelineIndex = 233,
+				timerStartOffset = -14,
+				uuid = "0addf668-9821-d094-bc86-9adaa499b96e",
+				version = 2,
+			},
 		},
 	},
 	[237] = 
@@ -3637,6 +3915,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -3664,6 +3947,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -3704,6 +3992,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -3711,18 +4011,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -3755,7 +4043,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 237,
 				timerStartOffset = -14.5,
-				uuid = "850e2893-dd4b-d6fb-9ece-8c06e2814993",
+				uuid = "79dc723c-ce5e-51b7-bea2-2f6d59615765",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -3825,6 +4113,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -3852,6 +4145,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -3892,6 +4190,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -3899,18 +4209,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -3939,18 +4237,15 @@ local tbl =
 					},
 				},
 				mechanicTime = 1177,
-				name = "[ST-TANK]雪仇",
+				name = "[MT-TANK]雪仇",
 				timeRange = true,
 				timelineIndex = 260,
-				timerStartOffset = -14.5,
-				uuid = "1182d051-1b8d-ce5a-a66b-785be7582a15",
+				timerStartOffset = -14,
+				uuid = "5484983b-e069-99fa-841e-3f47bfd3d16e",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
 		},
-	},
-	[262] = 
-	{
 		
 		{
 			data = 
@@ -3966,27 +4261,12 @@ local tbl =
 							{
 								
 								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"f814f9e5-13f0-6672-9386-5b3543e8d62b",
-									true,
-								},
-								
-								{
-									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "122aa5cf-03fc-1410-812a-58ddea2429f9",
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMissionary",
+							uuid = "e0feb09e-ebdd-0dbf-ad5d-935f6ef20867",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -4000,51 +4280,12 @@ local tbl =
 							{
 								
 								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"e461a896-bd5e-ab07-a484-aec12d0712fe",
+									"9b34dd5c-777c-a304-8c68-e6383d13a65f",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
-							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"911c0c8e-5374-a901-aa54-8ef953412e84",
-									true,
-								},
-								
-								{
-									"c98bbd2c-69fb-606f-8e61-1e45943871ca",
-									true,
-								},
-								
-								{
-									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-									true,
-								},
-							},
-							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
-							uuid = "38ea52cc-5ba1-66cb-b09d-f6d1d9ea5689",
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfLight",
+							uuid = "a29886ff-7a19-c4ae-ad04-e79f4b2b003a",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -4056,85 +4297,22 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 0.5,
-							actionID = 7535,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "911c0c8e-5374-a901-aa54-8ef953412e84",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "c98bbd2c-69fb-606f-8e61-1e45943871ca",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
 							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "9b34dd5c-777c-a304-8c68-e6383d13a65f",
 							version = 2,
 						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "isDRK",
-							uuid = "e461a896-bd5e-ab07-a484-aec12d0712fe",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "GUNBREAKER",
-							name = "isGNB",
-							uuid = "5982ff62-d42a-2eb2-897c-d7dc008b2d33",
-							version = 2,
-						},
-						inheritedIndex = 7,
 					},
 				},
-				mechanicTime = 1187.6,
-				name = "[MT-TANK]雪仇",
+				mechanicTime = 1177,
+				name = "[ST]群减",
 				timeRange = true,
-				timelineIndex = 262,
+				timelineIndex = 260,
 				timerStartOffset = -14,
-				uuid = "17a674df-7c6c-dd4d-9e47-50eb77b027a4",
+				uuid = "28adbfb6-8f6e-adbe-b5b6-810d30051ac2",
 				version = 2,
 			},
-			inheritedIndex = 3,
 		},
 	},
 	[268] = 
@@ -4201,6 +4379,11 @@ local tbl =
 									"e461a896-bd5e-ab07-a484-aec12d0712fe",
 									true,
 								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
 							uuid = "84838574-4748-4ab1-8dd3-91a0e4e733cb",
@@ -4228,6 +4411,11 @@ local tbl =
 								
 								{
 									"5982ff62-d42a-2eb2-897c-d7dc008b2d33",
+									true,
+								},
+								
+								{
+									"dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
 									true,
 								},
 							},
@@ -4268,6 +4456,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 13,
 							jobValue = "WARRIOR",
@@ -4275,18 +4475,6 @@ local tbl =
 							uuid = "f814f9e5-13f0-6672-9386-5b3543e8d62b",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
-							name = "isST",
-							uuid = "dbc1b16b-71a5-eaf0-a6bc-95b0b0733687",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -4319,7 +4507,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 268,
 				timerStartOffset = -14.5,
-				uuid = "42b28250-a65a-04a6-b8d3-563ada75c494",
+				uuid = "768f2ab8-f7fc-83dd-a515-cdab1641ae6e",
 				version = 2,
 			},
 			inheritedIndex = 3,
