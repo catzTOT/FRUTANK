@@ -4057,7 +4057,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P2_Open == 1 or 2\n",
+							conditionLua = "return CatZTankMitigation.Config.P2_Open == 1 or CatZTankMitigation.Config.P2_Open == 2",
 							name = "p2",
 							uuid = "144000e7-1abd-1a68-93a3-d0bd8e7861eb",
 							version = 2,
@@ -4477,6 +4477,7 @@ local tbl =
 							uuid = "e59ffef8-6599-e371-bfcd-34d2cbf669cf",
 							version = 2,
 						},
+						inheritedIndex = 3,
 					},
 				},
 				eventType = 2,
@@ -4509,6 +4510,11 @@ local tbl =
 									"576ae133-6370-1a0a-9ccd-d5a5a4cbf510",
 									true,
 								},
+								
+								{
+									"89e687b1-58b2-4cd6-b43b-ae54b15f5e62",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRK3_Hotbar_Provoke",
 							uuid = "7d0a5ce5-1401-58ae-bd82-6b9db2d3e19e",
@@ -4522,6 +4528,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"576ae133-6370-1a0a-9ccd-d5a5a4cbf510",
+									true,
+								},
+								
+								{
+									"89e687b1-58b2-4cd6-b43b-ae54b15f5e62",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
 							uuid = "cc472566-3412-232b-9f79-e203ced60824",
 							variableTogglesType = 2,
@@ -4533,6 +4552,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b0bf348-f028-93c3-a79e-5b2bcb1c06d3",
+									true,
+								},
+								
+								{
+									"89e687b1-58b2-4cd6-b43b-ae54b15f5e62",
+									true,
+								},
+							},
 							gVar = "ACR_RikuGNB3_Hotbar_Provoke",
 							uuid = "c1523ff4-4284-6414-a7c9-f4c5afdf24ec",
 							variableTogglesType = 2,
@@ -7996,75 +8028,6 @@ local tbl =
 							{
 								
 								{
-									"9d640d31-7c9d-4768-9015-a50fdd424556",
-									true,
-								},
-								
-								{
-									"f35456dd-097d-def8-a483-f1a25e9ca0bb",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "113961cb-c604-101b-9895-327fc256fdf0",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 0.5,
-							actionID = 40,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9d640d31-7c9d-4768-9015-a50fdd424556",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return CatZTankMitigation.Config.P3_BlackRing == 1",
-							name = "p3-1全减",
-							uuid = "f35456dd-097d-def8-a483-f1a25e9ca0bb",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				mechanicTime = 595.4,
-				name = "[war]战栗",
-				timeRange = true,
-				timelineIndex = 140,
-				timerStartOffset = -9,
-				uuid = "353b7952-9a51-2e32-873e-9eb54cab2419",
-				version = 2,
-			},
-			inheritedIndex = 5,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"e82f7069-3848-abe5-87e0-2157a8db3e98",
 									true,
 								},
@@ -8132,6 +8095,75 @@ local tbl =
 				timelineIndex = 140,
 				timerStartOffset = -6.5,
 				uuid = "e2d10f43-2a91-7cfe-97ef-f133f603f527",
+				version = 2,
+			},
+			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9d640d31-7c9d-4768-9015-a50fdd424556",
+									true,
+								},
+								
+								{
+									"f35456dd-097d-def8-a483-f1a25e9ca0bb",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "113961cb-c604-101b-9895-327fc256fdf0",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9d640d31-7c9d-4768-9015-a50fdd424556",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P3_BlackRing == 1",
+							name = "p3-1全减",
+							uuid = "f35456dd-097d-def8-a483-f1a25e9ca0bb",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 595.4,
+				name = "[war]战栗",
+				timeRange = true,
+				timelineIndex = 140,
+				timerStartOffset = -9,
+				uuid = "353b7952-9a51-2e32-873e-9eb54cab2419",
 				version = 2,
 			},
 			inheritedIndex = 9,
