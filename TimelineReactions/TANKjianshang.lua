@@ -2420,6 +2420,54 @@ local tbl =
 			},
 			inheritedIndex = 11,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8fb66178-def6-8640-b28e-a1c6f6338de5",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_Nebula",
+							uuid = "11031bea-ea90-daa1-a408-3da8989f1c52",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P1_Death1 == 3",
+							name = "P1-1-3",
+							uuid = "8fb66178-def6-8640-b28e-a1c6f6338de5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 40.3,
+				name = "[GNB]120cd",
+				timelineIndex = 11,
+				timerOffset = -14,
+				uuid = "56f513d8-25ae-bd18-a436-1bda2928eaa7",
+				version = 2,
+			},
+		},
 	},
 	[30] = 
 	{
@@ -2756,7 +2804,7 @@ local tbl =
 				name = "[TANK]无敌",
 				timeRange = true,
 				timelineIndex = 30,
-				timerStartOffset = -8,
+				timerStartOffset = -5,
 				uuid = "405cbda6-3704-87aa-99b7-82f8fce4e206",
 				version = 2,
 			},
@@ -3799,11 +3847,6 @@ local tbl =
 								},
 								
 								{
-									"403bc62f-2dc0-b00a-a08c-bfa2dc88b75d",
-									true,
-								},
-								
-								{
 									"3e066724-1277-99df-a9b9-527b3479c0c8",
 									true,
 								},
@@ -3829,18 +3872,6 @@ local tbl =
 							uuid = "27e2182d-961d-a1c7-90ab-181786a493f6",
 							version = 2,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
-							name = "isMT",
-							uuid = "403bc62f-2dc0-b00a-a08c-bfa2dc88b75d",
-							version = 2,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -10734,6 +10765,38 @@ local tbl =
 							version = 2.1,
 						},
 					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_DarkestDance == 2\n",
+							name = "p4-2",
+							uuid = "fd635564-fd34-5d51-8899-c2b1d9c40a3b",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 763.9,
+				name = "[TANK]无敌",
+				timeRange = true,
+				timelineIndex = 173,
+				timerStartOffset = -5,
+				uuid = "c2652e1e-7c4e-f4ae-9bb2-1907d99c1345",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 					
 					{
 						data = 
@@ -10770,14 +10833,14 @@ local tbl =
 					},
 				},
 				mechanicTime = 763.9,
-				name = "[TANK]无敌",
+				name = "[GNB]无敌",
 				timeRange = true,
 				timelineIndex = 173,
 				timerStartOffset = -9,
-				uuid = "c2652e1e-7c4e-f4ae-9bb2-1907d99c1345",
+				uuid = "eadff137-b4a9-0565-ac51-9a9e507b1967",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -10829,7 +10892,453 @@ local tbl =
 				uuid = "cf3d4d5d-257a-05a3-9d86-54befcd5710d",
 				version = 2,
 			},
-			inheritedIndex = 6,
+			inheritedIndex = 7,
+		},
+	},
+	[175] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e9febf41-64d0-6cc3-a4f9-5e3e8fc3aaa5",
+									true,
+								},
+								
+								{
+									"0116b713-a8fd-c78e-8f91-31a070a8513e",
+									true,
+								},
+								
+								{
+									"1af986f3-0b9a-d3c8-8c37-5d848e2a7bfc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "5e4f76a7-9252-eaad-be85-106830e53ee4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e9febf41-64d0-6cc3-a4f9-5e3e8fc3aaa5",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "0116b713-a8fd-c78e-8f91-31a070a8513e",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "1af986f3-0b9a-d3c8-8c37-5d848e2a7bfc",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 773.5,
+				name = "[war]血气",
+				timeRange = true,
+				timelineIndex = 175,
+				timerStartOffset = -4,
+				uuid = "36574f4c-4302-14e7-9843-2a2ff7b0b790",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+									true,
+								},
+								
+								{
+									"b9310ac9-0c16-6154-8feb-b429914c956b",
+									true,
+								},
+								
+								{
+									"668d758f-3cd1-de1d-b67b-600a89d59bbf",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMind",
+							uuid = "f3b6ce74-d49a-fc5b-9f84-a024acca9780",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 3634,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "b9310ac9-0c16-6154-8feb-b429914c956b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "668d758f-3cd1-de1d-b67b-600a89d59bbf",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 773.5,
+				name = "[DRK]弃明",
+				timeRange = true,
+				timelineIndex = 175,
+				timerStartOffset = -4,
+				uuid = "5e7bade9-5f6d-5dfb-8768-68b0319370b2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8d7249e3-1221-3e34-9475-3845b7d47086",
+									true,
+								},
+								
+								{
+									"d2cbf23a-5b80-6e7d-8459-54bdf5914777",
+									true,
+								},
+								
+								{
+									"9aeb188b-15eb-1d21-a96e-1ecf40bbae4b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_Oblation",
+							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 61,
+							actionID = 25754,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "d2cbf23a-5b80-6e7d-8459-54bdf5914777",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "9aeb188b-15eb-1d21-a96e-1ecf40bbae4b",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 773.5,
+				name = "[DRK]献奉",
+				timeRange = true,
+				timelineIndex = 175,
+				timerOffset = -0.89999997615814,
+				timerStartOffset = -4,
+				uuid = "4cf179f5-057a-baae-a3c3-7fdda91edd69",
+				version = 2,
+			},
+			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
+									true,
+								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"a9dde0e4-dc73-718b-bfbd-6a9ede343cd6",
+									true,
+								},
+								
+								{
+									"be082e0d-5482-76b1-9dcc-0284483cbac3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 7393,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "a9dde0e4-dc73-718b-bfbd-6a9ede343cd6",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "be082e0d-5482-76b1-9dcc-0284483cbac3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 773.5,
+				name = "[DRK]黑盾",
+				timeRange = true,
+				timelineIndex = 175,
+				timerEndOffset = 1.5,
+				timerStartOffset = -3,
+				uuid = "854d29e6-74b1-7c0d-91d2-2aa11190bddc",
+				version = 2,
+			},
+			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"27e2182d-961d-a1c7-90ab-181786a493f6",
+									true,
+								},
+								
+								{
+									"1072a615-f62a-dc60-b907-50486a0fae3c",
+									true,
+								},
+								
+								{
+									"2385d1f8-21bf-abc5-abf1-03e4a1b7e61d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumSelf",
+							uuid = "e11f1939-26f2-df53-bf60-cdd84ddd0e68",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25758,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "27e2182d-961d-a1c7-90ab-181786a493f6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "1072a615-f62a-dc60-b907-50486a0fae3c",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "2385d1f8-21bf-abc5-abf1-03e4a1b7e61d",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 773.5,
+				name = "[GNB]刚玉",
+				timeRange = true,
+				timelineIndex = 175,
+				timerStartOffset = -3.5,
+				uuid = "0c436c2e-b829-4c5b-a8a3-46127764bbc2",
+				version = 2,
+			},
 		},
 	},
 	[176] = 
@@ -10976,6 +11485,91 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"834b8dfe-df7d-d6a1-9a26-88d347df9fe2",
+									true,
+								},
+								
+								{
+									"365b2f45-9ce9-c28a-9e46-eaf1c2de6f59",
+									true,
+								},
+								
+								{
+									"39c2a9ce-db3c-0c61-8b1f-0bc57b525802",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_Camouflage",
+							uuid = "65ee4c49-6801-23f3-a309-e71af8055501",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 16140,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "834b8dfe-df7d-d6a1-9a26-88d347df9fe2",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"mt\"",
+							name = "isMT",
+							uuid = "365b2f45-9ce9-c28a-9e46-eaf1c2de6f59",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "39c2a9ce-db3c-0c61-8b1f-0bc57b525802",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 783.4,
+				name = "[GNB]伪装",
+				timeRange = true,
+				timelineIndex = 176,
+				timerStartOffset = -19,
+				uuid = "af4045c4-6e09-aac5-8bb8-d2803f346bc1",
+				version = 2,
+			},
+			inheritedIndex = 12,
 		},
 	},
 	[196] = 
@@ -11579,6 +12173,452 @@ local tbl =
 			},
 		},
 	},
+	[202] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e9febf41-64d0-6cc3-a4f9-5e3e8fc3aaa5",
+									true,
+								},
+								
+								{
+									"0116b713-a8fd-c78e-8f91-31a070a8513e",
+									true,
+								},
+								
+								{
+									"1af986f3-0b9a-d3c8-8c37-5d848e2a7bfc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "5e4f76a7-9252-eaad-be85-106830e53ee4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e9febf41-64d0-6cc3-a4f9-5e3e8fc3aaa5",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "0116b713-a8fd-c78e-8f91-31a070a8513e",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "1af986f3-0b9a-d3c8-8c37-5d848e2a7bfc",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 854.9,
+				name = "[war]血气",
+				timeRange = true,
+				timelineIndex = 202,
+				timerStartOffset = -4,
+				uuid = "53569c00-f896-c688-bf78-cd6b01cc83bb",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+									true,
+								},
+								
+								{
+									"b9310ac9-0c16-6154-8feb-b429914c956b",
+									true,
+								},
+								
+								{
+									"668d758f-3cd1-de1d-b67b-600a89d59bbf",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_DarkMind",
+							uuid = "f3b6ce74-d49a-fc5b-9f84-a024acca9780",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 3634,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "7c427ec4-7fb9-79b9-a807-b62b9f38dbe8",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"Ot\"",
+							name = "isST",
+							uuid = "b9310ac9-0c16-6154-8feb-b429914c956b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "668d758f-3cd1-de1d-b67b-600a89d59bbf",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 854.9,
+				name = "[DRK]弃明",
+				timeRange = true,
+				timelineIndex = 202,
+				timerStartOffset = -4,
+				uuid = "a5fa08ed-b11d-7c76-893a-edc60c7471b9",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8d7249e3-1221-3e34-9475-3845b7d47086",
+									true,
+								},
+								
+								{
+									"d2cbf23a-5b80-6e7d-8459-54bdf5914777",
+									true,
+								},
+								
+								{
+									"9aeb188b-15eb-1d21-a96e-1ecf40bbae4b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_Oblation",
+							uuid = "572bd1ba-2225-93ad-ab7c-c81361da1fb0",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 61,
+							actionID = 25754,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8d7249e3-1221-3e34-9475-3845b7d47086",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"Ot\"",
+							name = "isST",
+							uuid = "d2cbf23a-5b80-6e7d-8459-54bdf5914777",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "9aeb188b-15eb-1d21-a96e-1ecf40bbae4b",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 854.9,
+				name = "[DRK]献奉",
+				timeRange = true,
+				timelineIndex = 202,
+				timerOffset = -0.89999997615814,
+				timerStartOffset = -4,
+				uuid = "4e230bd9-cd00-4f3d-a4a9-2322a079fab6",
+				version = 2,
+			},
+			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e82f7069-3848-abe5-87e0-2157a8db3e98",
+									true,
+								},
+								
+								{
+									"83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+									true,
+								},
+								
+								{
+									"a9dde0e4-dc73-718b-bfbd-6a9ede343cd6",
+									true,
+								},
+								
+								{
+									"be082e0d-5482-76b1-9dcc-0284483cbac3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_Tankbar_TheBlackestNightSelf",
+							uuid = "3c1c118a-4c60-300b-bf3d-e808e7545abb",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 3,
+							mpType = 2,
+							mpValue = 3000,
+							uuid = "e82f7069-3848-abe5-87e0-2157a8db3e98",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 7393,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "83f90448-dc88-1e9f-a0e0-58e0f95e616d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "a9dde0e4-dc73-718b-bfbd-6a9ede343cd6",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "be082e0d-5482-76b1-9dcc-0284483cbac3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 854.9,
+				name = "[DRK]黑盾",
+				timeRange = true,
+				timelineIndex = 202,
+				timerEndOffset = 1.5,
+				timerStartOffset = -3,
+				uuid = "21640997-03bf-6380-bc72-c51806dc6c3c",
+				version = 2,
+			},
+			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"27e2182d-961d-a1c7-90ab-181786a493f6",
+									true,
+								},
+								
+								{
+									"1072a615-f62a-dc60-b907-50486a0fae3c",
+									true,
+								},
+								
+								{
+									"2385d1f8-21bf-abc5-abf1-03e4a1b7e61d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_HeartOfCorundumSelf",
+							uuid = "e11f1939-26f2-df53-bf60-cdd84ddd0e68",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 25758,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "27e2182d-961d-a1c7-90ab-181786a493f6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "1072a615-f62a-dc60-b907-50486a0fae3c",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "2385d1f8-21bf-abc5-abf1-03e4a1b7e61d",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 854.9,
+				name = "[GNB]刚玉",
+				timeRange = true,
+				timelineIndex = 202,
+				timerStartOffset = -3.5,
+				uuid = "c2c0c4ef-9bae-e010-a937-7ca29937544e",
+				version = 2,
+			},
+		},
+	},
 	[204] = 
 	{
 		
@@ -11723,6 +12763,91 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"834b8dfe-df7d-d6a1-9a26-88d347df9fe2",
+									true,
+								},
+								
+								{
+									"365b2f45-9ce9-c28a-9e46-eaf1c2de6f59",
+									true,
+								},
+								
+								{
+									"39c2a9ce-db3c-0c61-8b1f-0bc57b525802",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_Camouflage",
+							uuid = "65ee4c49-6801-23f3-a309-e71af8055501",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.5,
+							actionID = 16140,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "834b8dfe-df7d-d6a1-9a26-88d347df9fe2",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return _G[\"ACR_\"..gACRSelectedProfiles[TensorCore.mGetPlayer().job]..\"_TankStance\"] == \"ot\"",
+							name = "isST",
+							uuid = "365b2f45-9ce9-c28a-9e46-eaf1c2de6f59",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return CatZTankMitigation.Config.P4_Y == true",
+							name = "is y",
+							uuid = "39c2a9ce-db3c-0c61-8b1f-0bc57b525802",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 864.8,
+				name = "[GNB]伪装",
+				timeRange = true,
+				timelineIndex = 204,
+				timerStartOffset = -19,
+				uuid = "f299f66a-9981-700b-a60a-4739c539fe5f",
+				version = 2,
+			},
+			inheritedIndex = 12,
 		},
 	},
 	[207] = 
